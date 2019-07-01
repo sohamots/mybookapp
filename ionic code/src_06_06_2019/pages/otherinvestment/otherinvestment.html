@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Other Investment</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12>
+				<ion-card (click)="gotoAddinvestmentsPage()" class="color-one">
+					<ion-card-content>
+						<h3>Date</h3>
+			    		<h2>Deposite Made</h2>
+			    		<p>Payment Mode</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

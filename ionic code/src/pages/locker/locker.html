@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Lockers</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-refresher (ionRefresh)="populateList($event)">
+	    <ion-refresher-content
+	    pullingIcon="md-arrow-dropdown"
+	    pullingText="Pull to refresh"
+	    refreshingSpinner="crescent"
+	    refreshingText="Refreshing Data...">
+	  </ion-refresher-content>
+	</ion-refresher>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 *ngFor="let item of lockers">
+				<ion-card class="color-one">
+					<ion-card-content>
+						<ion-row>
+							<ion-col col-11>
+								<h2>{{item.bank_name}}</h2>
+					    	</ion-col>
+					    	<ion-col text-right>
+					    		<ion-icon name="create" (click)="gotoEditaccountsPage(item)"></ion-icon>
+					    		<ion-icon name="eye" (click)="gotoAccountviewPage(item)"></ion-icon>
+					    	</ion-col>
+					    </ion-row>
+						<!-- <h3>{{item.acc_type}} Account</h3> -->
+			    		<h2>{{item.bank_name}}</h2>
+			    		<p>Locker No.: {{item.locker_no}}</p>
+			    		<p>Items : {{item.items}}</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

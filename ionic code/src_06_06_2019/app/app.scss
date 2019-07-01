@@ -1,0 +1,180 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+.app-root {
+	font-family: 'Raleway', sans-serif;
+}
+.toolbar-background {
+	background: #002e5e;
+}
+.bar-button-default-md {
+	color: #f3c107;
+}
+.toolbar-title-md {
+	color: #f3c107;
+	font-weight: 700;
+}
+.color-one {
+	background: #2c71d2;
+	background: -moz-linear-gradient(-45deg, #2c71d2 0%, #21bafd 100%);
+	background: -webkit-linear-gradient(-45deg, #2c71d2 0%,#21bafd 100%);
+	background: linear-gradient(135deg, #2c71d2 0%,#21bafd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c71d2', endColorstr='#21bafd',GradientType=1 );
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 30px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.08);
+
+	.item-md {
+		background: transparent;
+
+		ion-avatar[item-start] {
+			filter: brightness(0) invert(1);
+		}
+
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+.color-two {
+	background: #363065;
+	background: -moz-linear-gradient(-45deg, #363065 0%, #465599 100%);
+	background: -webkit-linear-gradient(-45deg, #363065 0%,#465599 100%);
+	background: linear-gradient(135deg, #363065 0%,#465599 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363065', endColorstr='#465599',GradientType=1 );
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 30px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.08);
+
+	.item-md {
+		background: transparent;
+
+		ion-avatar[item-start] {
+			filter: brightness(0) invert(1);
+		}
+
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+.color-three {
+	background: #4059e4;
+	background: -moz-linear-gradient(-45deg, #4059e4 0%, #7f94fc 100%);
+	background: -webkit-linear-gradient(-45deg, #4059e4 0%,#7f94fc 100%);
+	background: linear-gradient(135deg, #4059e4 0%,#7f94fc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4059e4', endColorstr='#7f94fc',GradientType=1 );
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 30px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.08);
+
+	.item-md {
+		background: transparent;
+
+		ion-avatar[item-start] {
+			filter: brightness(0) invert(1);
+		}
+
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+.color-four {
+	background: #886be2;
+	background: -moz-linear-gradient(-45deg, #886be2 0%, #b077e6 100%);
+	background: -webkit-linear-gradient(-45deg, #886be2 0%,#b077e6 100%);
+	background: linear-gradient(135deg, #886be2 0%,#b077e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#886be2', endColorstr='#b077e6',GradientType=1 );
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 30px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.08);
+
+	.item-md {
+		background: transparent;
+
+		ion-avatar[item-start] {
+			filter: brightness(0) invert(1);
+		}
+
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+.header-md:after {
+	background-image: none;
+}
+.card-md#theme1 {
+	background: #0288d1;
+	background: -webkit-linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+	background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+	background-size: 100% 100%;
+	background-position: center;
+	transition: background .3s;
+}
+.card-md#theme2 {
+	background: #FF5252;
+	background: -webkit-linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+	background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+	background-size: 100% 100%;
+	background-position: center;
+	transition: background .3s;
+}
+.card-md#theme3 {
+  background-image: linear-gradient(45deg, #29323c, #485563);
+  background-size: 100% 100%;
+  background-position: center;
+  transition: background .3s;
+}
+.card-md#theme4 {
+	background: #ff6f00;
+	background: -webkit-linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+	background: linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+	background-size: 100% 100%;
+	background-position: center;
+	transition: background .3s;
+}
+.card-md#theme5 {
+	background: #43A047;
+	background: -webkit-linear-gradient(45deg, #43A047 0%, #1de9b6 100%);
+	background: linear-gradient(45deg, #43A047 0%, #1de9b6 100%);
+	background-size: 100% 100%;
+	background-position: center;
+	transition: background .3s;
+}
+.card-md#theme6 {
+	background-image: linear-gradient(45deg, #65379b, #886aea);
+	background-size: 100% 100%;
+	background-position: center;
+	transition: background .3s;
+}

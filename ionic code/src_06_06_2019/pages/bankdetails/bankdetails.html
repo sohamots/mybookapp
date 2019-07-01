@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Bank Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoBankaccountPage()" id="theme1">
+					<ion-card-content text-center>
+						<img src="assets/imgs/accounting.svg">
+						<h4>My Bank<br/>Accounts</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card (click)="gotoLockerPage()" id="theme2">
+					<ion-card-content text-center>
+						<img src="assets/imgs/safe.svg">
+						<h4>My Lockers</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoDemataccountPage()" id="theme3">
+					<ion-card-content text-center>
+						<img src="assets/imgs/suitcase.svg">
+						<h4>My Demat<br/>Account</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card (click)="gotoCreditcardPage()" id="theme4">
+					<ion-card-content text-center>
+						<img src="assets/imgs/credit-card(2).svg">
+						<h4>My Credit Card Details</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoFixeddipositePage()" id="theme1">
+					<ion-card-content text-center>
+						<img src="assets/imgs/deposit.svg">
+						<h4>My Fixed Deposite Investment</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

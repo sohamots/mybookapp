@@ -1,0 +1,324 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding *ngIf="insurance_type==1">
+	<form [formGroup]="form">
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Name</ion-label>
+			<ion-input type="text" value="{{insurance.company_name}}" formControlName="company_name" name="company_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Plan Name</ion-label>
+			<ion-input type="text" value="{{insurance.plan_name}}" formControlName="plan_name" name="plan_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Number</ion-label>
+			<ion-input type="text" value="{{insurance.policy_no}}" formControlName="policy_no" name="policy_no"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Holders Name</ion-label>
+			<ion-input type="text" value="{{insurance.holder_name}}" formControlName="holder_name" name="holder_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Nominee Name</ion-label> 
+			<ion-input type="text" value="{{insurance.nominee_name}}" formControlName="nominee_name" name="nominee_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Sum Assured</ion-label>
+			<ion-input type="text" value="{{insurance.sum}}" formControlName="sum" name="sum"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Policy Start Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31"  formControlName="start_date" name="start_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Policy Maturity Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="maturity_date" name="maturity_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Term ( No Of Years )</ion-label>
+			<ion-input type="text" value="{{insurance.policy_term}}" formControlName="policy_term" name="policy_term"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Premium Amount</ion-label>
+			<ion-input type="text" value="{{insurance.premium_amount}}" formControlName="premium_amount" name="premium_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Renewal Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="renewel_date" name="renewel_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Name</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_name}}" formControlName="adviser_name" name="adviser_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Mobile No</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_mobile}}" formControlName="adviser_mobile" name="adviser_mobile"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Help desk</ion-label>
+			<ion-input type="text" value="{{insurance.company_help_desk}}" formControlName="company_help_desk" name="company_help_desk"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Customer Portal Login Id</ion-label>
+			<ion-input type="text" value="{{insurance.customer_portal_login_id}}" formControlName="customer_portal_login_id" name="customer_portal_login_id"></ion-input>
+		</ion-item>
+		<button ion-button block large (click)="save1()" [disabled]="!form.valid">Save Details</button>
+	</form>
+</ion-content>
+<ion-content padding *ngIf="insurance_type==2">
+	<form [formGroup]="form1">
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Name</ion-label>
+			<ion-input type="text" value="{{insurance.company_name}}" formControlName="company_name" name="company_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Plan Name</ion-label>
+			<ion-input type="text" value="{{insurance.plan_name}}" formControlName="plan_name" name="plan_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Number</ion-label>
+			<ion-input type="text" value="{{insurance.policy_no}}" formControlName="policy_no" name="policy_no"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Holders Name</ion-label>
+			<ion-input type="text" value="{{insurance.holder_name}}" formControlName="holder_name" name="holder_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Family Members</ion-label> 
+			<ion-input type="text" value="{{insurance.family_members}}" formControlName="family_members" name="family_members"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Sum Assured</ion-label>
+			<ion-input type="text" value="{{insurance.sum}}" formControlName="sum" name="sum"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Policy Start Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="start_date" name="start_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Premium Amount</ion-label>
+			<ion-input type="text" value="{{insurance.premium_amount}}" formControlName="premium_amount" name="premium_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Renewal Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="renewel_date" name="renewel_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Name</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_name}}" formControlName="adviser_name" name="adviser_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Mobile No</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_mobile}}" formControlName="adviser_mobile" name="adviser_mobile"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Help desk</ion-label>
+			<ion-input type="text" value="{{insurance.company_help_desk}}" formControlName="company_help_desk" name="company_help_desk"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Customer Portal Login Id</ion-label>
+			<ion-input type="text" value="{{insurance.customer_portal_login_id}}" formControlName="customer_portal_login_id" name="customer_portal_login_id"></ion-input>
+		</ion-item>
+		<button ion-button block large (click)="save2()" [disabled]="!form1.valid">Save Details</button>
+	</form>
+</ion-content>
+<ion-content padding *ngIf="insurance_type==3">
+	<form [formGroup]="form2">
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Name</ion-label>
+			<ion-input type="text" value="{{insurance.company_name}}" formControlName="company_name" name="company_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Plan Name</ion-label>
+			<ion-input type="text" value="{{insurance.plan_name}}" formControlName="plan_name" name="plan_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Number</ion-label>
+			<ion-input type="text" value="{{insurance.policy_no}}" formControlName="policy_no" name="policy_no"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Holders Name</ion-label>
+			<ion-input type="text" value="{{insurance.holder_name}}" formControlName="holder_name" name="holder_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Property Details</ion-label> 
+			<ion-input type="text" value="{{insurance.property_details}}" formControlName="property_details" name="property_details"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Coverage Amount</ion-label>
+			<ion-input type="text" value="{{insurance.coverage_amount}}" formControlName="coverage_amount" name="coverage_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Coverage Type</ion-label>
+			<ion-input type="text" value="{{insurance.coverage_type}}" formControlName="coverage_type" name="coverage_type"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Policy Start Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="start_date" name="start_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Premium Amount</ion-label>
+			<ion-input type="text" value="{{insurance.premium_amount}}" formControlName="premium_amount" name="premium_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Renewal Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="renewel_date" name="renewel_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Renewal Amount</ion-label>
+			<ion-input type="text" value="{{insurance.renewel_amount}}" formControlName="renewel_amount" name="renewel_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Name</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_name}}" formControlName="adviser_name" name="adviser_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Mobile No</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_mobile}}" formControlName="adviser_mobile" name="adviser_mobile"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Help desk</ion-label>
+			<ion-input type="text" value="{{insurance.company_help_desk}}" formControlName="company_help_desk" name="company_help_desk"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Customer Portal Login Id</ion-label>
+			<ion-input type="text" value="{{insurance.customer_portal_login_id}}" formControlName="customer_portal_login_id" name="customer_portal_login_id"></ion-input>
+		</ion-item>
+		<button ion-button block large (click)="save3()" [disabled]="!form2.valid">Save Details</button>
+	</form>
+</ion-content>
+<ion-content padding *ngIf="insurance_type==4">
+	<form [formGroup]="form3">
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Vehicle Reg No</ion-label>
+			<ion-input type="text" value="{{insurance.vehicle_reg_no}}" formControlName="vehicle_reg_no" name="vehicle_reg_no"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Make</ion-label>
+			<ion-input type="text" value="{{insurance.make}}" formControlName="make" name="make"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Model</ion-label>
+			<ion-input type="text" value="{{insurance.model}}" formControlName="model" name="model"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Year</ion-label>
+			<ion-input type="text" value="{{insurance.year}}" formControlName="year" name="year"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Name</ion-label>
+			<ion-input type="text" value="{{insurance.company_name}}" formControlName="company_name" name="company_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Policy Number</ion-label>
+			<ion-input type="text" value="{{insurance.policy_no}}" formControlName="policy_no" name="policy_no"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Declared Amount</ion-label>
+			<ion-input type="text" value="{{insurance.declared_amount}}" formControlName="declared_amount" name="declared_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Coverage Type</ion-label>
+			<ion-input type="text" value="{{insurance.coverage_type}}" formControlName="coverage_type" name="coverage_type"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Policy Start Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="start_date" name="start_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Premium Amount</ion-label>
+			<ion-input type="text" value="{{insurance.premium_amount}}" formControlName="premium_amount" name="premium_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label>Renewal Date</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" max="2050-12-31" formControlName="renewel_date" name="renewel_date"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Renewal Amount</ion-label>
+			<ion-input type="text" value="{{insurance.renewel_amount}}" formControlName="renewel_amount" name="renewel_amount"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Name</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_name}}" formControlName="adviser_name" name="adviser_name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Advisor Mobile No</ion-label>
+			<ion-input type="text" value="{{insurance.adviser_mobile}}" formControlName="adviser_mobile" name="adviser_mobile"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Company Help desk</ion-label>
+			<ion-input type="text" value="{{insurance.company_help_desk}}" formControlName="company_help_desk" name="company_help_desk"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-icon name="ios-help-circle" item-start></ion-icon>
+			<ion-label floating>Customer Portal Login Id</ion-label>
+			<ion-input type="text" value="{{insurance.company_name}}" formControlName="customer_portal_login_id" name="customer_portal_login_id"></ion-input>
+		</ion-item>
+		<button ion-button block large (click)="save4()" [disabled]="!form3.valid">Save Details</button>
+	</form>
+</ion-content>

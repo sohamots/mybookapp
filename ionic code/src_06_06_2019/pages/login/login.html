@@ -1,0 +1,22 @@
+<ion-content padding>
+	<img src="assets/imgs/logo.png">
+	<ion-item-divider>Please Enter Mobile No To Continue</ion-item-divider>
+	<form [formGroup]="form">
+		<ion-item>
+			<ion-icon name="ios-phone-portrait" item-start></ion-icon>
+			<ion-input type="tel" maxLength="10" value="" placeholder="Mobile No" formControlName="mobile" name="mobile"></ion-input>
+		</ion-item>
+		<!-- <ion-item>
+			<ion-icon name="ios-home" item-start></ion-icon>
+			<ion-input type="text" value="" placeholder="Residence"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-icon name="ios-stats" item-start></ion-icon>
+			<ion-input type="text" value="" placeholder="Office"></ion-input>
+		</ion-item> -->
+
+		
+		<button ion-button block large (click)="login()" [disabled]="!form.valid">continue...</button>
+	</form>
+</ion-content>

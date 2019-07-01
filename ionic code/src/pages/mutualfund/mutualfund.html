@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Mutual Fund Investment</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-refresher (ionRefresh)="populateList($event)">
+	    <ion-refresher-content
+	    pullingIcon="md-arrow-dropdown"
+	    pullingText="Pull to refresh"
+	    refreshingSpinner="crescent"
+	    refreshingText="Refreshing Data...">
+	  </ion-refresher-content>
+	</ion-refresher>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 *ngFor="let item of mutual_funds">
+				<ion-card class="color-one">
+					<ion-card-content>
+						<ion-row>
+							<ion-col col-11>
+								<h3>{{item.scheme_name}}</h3>
+			    				<h2>Folio No: {{item.folio_no}}</h2>
+					    	</ion-col>
+					    	<ion-col text-right>
+					    		<ion-icon name="create" (click)="gotoEditAccountPage(item)"></ion-icon>
+					    		<ion-icon name="eye" (click)="gotoInvestmentviewPage(item)"></ion-icon>
+					    	</ion-col>
+					    </ion-row>
+			    		<p>SIP/ LUMP Sum : {{item.sip_sum}}</p>
+			    		<p>SIP Tenure : {{item.sip_tenure}}</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

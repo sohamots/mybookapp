@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Investments</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoMutualfundPage()" id="theme1">
+					<ion-card-content text-center>
+						<img src="assets/imgs/investment-2.svg">
+						<h4>My Mutual Fund Investment</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card (click)="gotoPffinvestmentPage()" id="theme3">
+					<ion-card-content text-center>
+						<img src="assets/imgs/investment-2.svg">
+						<h4>My PFF Investment</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+		<!-- <ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoPropertyPage()" id="theme2">
+					<ion-card-content text-center>
+						<img src="assets/imgs/mortgage.svg">
+						<h4>My Property</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card (click)="gotoOtherinvestmentPage()" id="theme4">
+					<ion-card-content text-center>
+						<img src="assets/imgs/investment-2.svg">
+						<h4>My Other Investment</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row> -->
+	</ion-grid>
+</ion-content>

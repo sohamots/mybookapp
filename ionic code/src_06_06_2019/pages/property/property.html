@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Property</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-refresher (ionRefresh)="populateList($event)">
+	    <ion-refresher-content
+	    pullingIcon="md-arrow-dropdown"
+	    pullingText="Pull to refresh"
+	    refreshingSpinner="crescent"
+	    refreshingText="Refreshing Data...">
+	  </ion-refresher-content>
+	</ion-refresher>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12>
+				<ion-card (click)="gotoAddinvestmentsPage()" class="color-one">
+					<ion-card-content>
+						<h3>Property Name</h3>
+			    		<h2>Owner's name as per title docs</h2>
+			    		<p>Registered Value</p>
+			    		<p>Property End Use</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

@@ -1,0 +1,66 @@
+page-loans {
+	.header-md:after {
+		background-image: none;
+	}
+	.toolbar-background {
+		background: #f2f4f7;
+	}
+	.toolbar-title-md {
+		color: #002e5e;
+	}
+	.back-button.show-back-button {
+		margin-left: 0;
+		color: #002e5e;
+	}
+	.scroll-content {
+		background: #f2f4f7;
+
+		.list-md {
+
+			margin-bottom: 0;
+
+			.item-md {
+				padding-left: 10px;
+				background: transparent;
+			}
+		}
+
+		.col[col-6] {
+			padding: 10px;
+
+			.card-md {
+				width: 100%;
+				margin: 0;
+				border-radius: 10px;
+				box-shadow: 0 1px 15px rgba(0,0,0,.04),0 1px 6px rgba(0,0,0,.04);
+				min-height: 144px;
+
+				ion-card-content {
+					padding: 15px 10px;
+
+					img {
+						max-width: 50px;
+						margin-bottom: 5px;
+						display: inline-block;
+						filter: brightness(0) invert(1);
+					}
+					h4 {
+						font-size: 14px;
+						font-weight: 600;
+						text-align: center;
+						color: #fff;
+					}
+					h4:before {
+						width: 30px;
+						height: 3px;
+						border-radius: 3px;
+						background: rgba(255,255,255,0.5);
+						display: block;
+						margin: 5px auto 10px;
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}

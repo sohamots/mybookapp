@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Credit Card</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 *ngFor="let item of credit_cards">
+				<ion-card (click)="gotoAddaccountsPage()" class="color-one">
+					<ion-card-content>
+						<h3>{{item.card_no}}</h3>
+			    		<h2>{{item.bank_name}}</h2>
+			    		<p>Card No.: {{item.card_no}}</p>
+			    		<p>Card Limit : {{item.credit_limit}}</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-content padding>
+	<img src="assets/imgs/logo.png">
+	<ul class="listing">
+		<li ><a href="#">1</a></li>
+		<li class="active"><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+	</ul>
+	<ion-item-divider>Enter Your OTP</ion-item-divider>
+	<form [formGroup]="form">
+		<ion-item>
+			<ion-icon name="ios-contact" item-start></ion-icon>
+			<ion-input type="tel" maxLength="6" value="" placeholder="OTP" formControlName="otp" name="otp"></ion-input>
+		</ion-item>
+		<button ion-button block large (click)="verify_no_register()" [disabled]="!form.valid">continue...</button>
+	</form>
+</ion-content>

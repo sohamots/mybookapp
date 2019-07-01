@@ -1,0 +1,158 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add Investments</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding *ngIf="invest_type==1">
+<form [formGroup]="form" >
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Scheme Name</ion-label>
+		<ion-input type="text" value="" formControlName="scheme_name" name="scheme_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Folio No</ion-label>
+		<ion-input type="text" value="" formControlName="folio_no" name="folio_no"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Fund Opted</ion-label>
+		<ion-input type="text" value="" formControlName="fund_opted" name="fund_opted"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Fund Type</ion-label>
+		<ion-input type="text" value="" formControlName="fund_type" name="fund_type"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Payout Option</ion-label>
+		<ion-input type="text" value="" formControlName="payout_option" name="payout_option"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>SIP/ LUMP Sum</ion-label>
+		<ion-input type="text" value="" formControlName="sip_sum" name="sip_sum"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>SIP Tenure</ion-label>
+		<ion-input type="text" value="" formControlName="sip_tenure" name="sip_tenure"></ion-input>
+	</ion-item>
+	<!-- <ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Bank Account Details for ECS/SI</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Date of ECS /SI</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item> -->
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Customer Portal Login Id</ion-label>
+		<ion-input type="text" value="" formControlName="portal_login_id" name="portal_login_id"></ion-input>
+	</ion-item>
+	<button ion-button block large (click)="save1()" [disabled]="!form.valid">Save Details</button>
+</form>
+</ion-content>
+
+
+
+<!-- <ion-content padding>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Property Name</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Owner's name as per title docs</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Location of Property Docs</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Title Type</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Registered Value</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Property End Use</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<button ion-button block large>Save Details</button>
+</ion-content> -->
+
+
+
+
+<ion-content padding *ngIf="invest_type==2">
+<form [formGroup]="form1">
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Bank Name</ion-label>
+		<ion-input type="text" value="" formControlName="bank_name" name="bank_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Branch Address</ion-label>
+		<ion-input type="text" value="" formControlName="branch_address" name="branch_address"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>PPF Account No</ion-label>
+		<ion-input type="text" value="" formControlName="acc_no" name="acc_no"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Date</ion-label>
+		<ion-datetime displayFormat="DD/MM/YYYY" value="" formControlName="payment_date" name="payment_date"></ion-datetime>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Deposit Made</ion-label>
+		<ion-input type="text" value="" formControlName="deposit_made" name="deposit_made"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Payment Made</ion-label>
+		<ion-input type="text" value="" formControlName="payment_made" name="payment_made"></ion-input>
+	</ion-item>
+	<button ion-button block large (click)="save2()" [disabled]="!form1.valid">Save Details</button>
+</form>
+</ion-content>
+
+
+
+<!-- <ion-content padding>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Date</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Deposit Made</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="ios-help-circle" item-start></ion-icon>
+		<ion-label floating>Payment Made</ion-label>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item>
+	<button ion-button block large>Save Details</button>
+</ion-content> -->

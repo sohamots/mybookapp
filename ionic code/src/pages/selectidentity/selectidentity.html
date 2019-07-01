@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar>
+    <ion-title>Upload Important Doc</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+	<ion-grid>
+		
+		<ion-row>
+			<ion-col col-6>
+				<ion-card >
+					<ion-card-header text-center (click)="getPanImage()">
+						<img src="assets/imgs/pancard.png">
+						
+						<h4 >Upload Pan Card</h4>
+					</ion-card-header>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card >
+					<ion-card-header text-center (click)="getAadharImage()">
+						<img src="assets/imgs/pancard.png">
+						
+						<h4 >Upload Aadhar</h4>
+					</ion-card-header>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card >
+					<ion-card-header text-center (click)="getDrivingImage()">
+						<img src="assets/imgs/license.png">
+						
+						<h4 >Upload Driving License</h4>
+					</ion-card-header>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card >
+					<ion-card-header text-center (click)="getPassportImage()">
+						<img src="assets/imgs/passport.png">
+						
+						<h4 >Upload Passport</h4>
+					</ion-card-header>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

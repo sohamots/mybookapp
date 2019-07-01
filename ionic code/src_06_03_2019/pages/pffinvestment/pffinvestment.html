@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>PFF Investment</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 *ngFor="let item of ppf_investments">
+				<ion-card (click)="gotoEditAccountPage(item)" class="color-one">
+					<ion-card-content>
+						<h3>{{item.bank_name}}</h3>
+			    		<h2>Acc NO. {{item.acc_no}}</h2>
+			    		<p>Deposite Made : {{item.deposit_made}}</p>
+			    		<p>Payment Made : {{item.payment_made}}</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

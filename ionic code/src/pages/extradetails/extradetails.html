@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Family Members</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 *ngFor="let item of family_members">
+				<ion-card  class="color-one">
+					<ion-card-content>
+						<ion-row>
+							<ion-col col-11>
+								<h3>Name : {{item.name}}</h3>
+			    				<h2>Mobile No : {{item.mobile}}</h2>
+					    	</ion-col>
+					    	<ion-col text-right>
+					    		<ion-icon name="create" (click)="goToAdextra1(item)"></ion-icon>
+					    		<ion-icon name="eye" (click)="goToFamilyviewPage(item)"></ion-icon>
+					    	</ion-col>
+					    </ion-row>
+			    		<p>Email Id : {{item.email}}</p>
+			    		<p>Relation : {{item.relation}}</p>
+			    		<p>DOB : {{item.dob}} | Blood Group : {{item.blood_group}}</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="goToAdextra()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>

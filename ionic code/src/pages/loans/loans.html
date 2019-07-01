@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Loans</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoPropertyloansPage()" id="theme1">
+					<ion-card-content text-center>
+						<img src="assets/imgs/mortgage.svg">
+						<h4>Home Property Loans</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card (click)="gotoAutoloansPage()" id="theme2">
+					<ion-card-content text-center>
+						<img src="assets/imgs/rickshaw.svg">
+						<h4>Auto Loans</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6>
+				<ion-card (click)="gotoPersonalloansPage()" id="theme3">
+					<ion-card-content text-center>
+						<img src="assets/imgs/team.svg">
+						<h4>Personal Loans</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col col-6>
+				<ion-card (click)="gotoGoldloansPage()" id="theme4">
+					<ion-card-content text-center>
+						<img src="assets/imgs/ingots.svg">
+						<h4>Gold Loans</h4>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

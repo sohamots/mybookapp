@@ -1,0 +1,256 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>View Accounts</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding *ngIf="bank_type==1">
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Bank Name</h5>
+		<p>{{bank.bank_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Branch Address</h5>
+		<p>{{bank.branch_address}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Account Holder's Name</h5>
+		<p>{{bank.holder_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Account Number</h5>
+		<p>{{bank.acc_no}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Account Type</h5>
+		<p>{{bank.acc_type}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Branch IFSC Code</h5>
+		<p>{{bank.ifsc_code}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Branch MICR Code</h5>
+		<p>{{bank.micr_code}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Debit Card Issued</h5>
+		<p>{{bank.debit_card}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Cheque Book Issued</h5>
+		<p>{{bank.cheque_book}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Net Banking Id</h5>
+		<p>{{bank.net_banking_id}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Registered Email Id</h5>
+		<p>{{bank.email}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Registered Mobile No</h5>
+		<p>{{bank.mobile}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Bank Help Line Number</h5>
+		<p>{{bank.help_line}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Account Relationship Manager Name</h5>
+		<p>{{bank.rm_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Account Relationship Manager Number</h5>
+		<p>{{bank.rm_mobile}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Bank Manager Name</h5>
+		<p>{{bank.manager_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Bank Manager Number</h5>
+		<p>{{bank.manager_mobile}}</p>
+	</ion-item>
+</ion-content>
+
+
+
+
+
+
+
+<ion-content padding *ngIf="bank_type==5">
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Bank Name</h5>
+		<p>{{bank.bank_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Branch Address</h5>
+		<p>{{bank.branch_address}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Locker Number</h5>
+		<p>{{bank.locker_no}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Locker Holder's Name</h5>
+		<p>{{bank.holder_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Items Stored in Lockers</h5>
+		<p>{{bank.items}}</p>
+	</ion-item>
+</ion-content>
+
+
+
+<ion-content padding *ngIf="bank_type==3">
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Company Name</h5>
+		<p>{{bank.company_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Demat Account No</h5>
+		<p>{{bank.acc_no}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Account Holder's Name</h5>
+		<p>{{bank.holder_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Company Helpdesk No</h5>
+		<p>{{bank.helpdesk_no}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Customer Portal Login Id</h5>
+		<p>{{bank.portal_login_id}}</p>
+	</ion-item>
+</ion-content>
+
+
+
+
+
+<ion-content padding *ngIf="bank_type==4">
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Card Holder's Name</h5>
+		<p>{{bank.holder_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Card Issued Bank Name</h5>
+		<p>{{bank.bank_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Credit Card Number</h5>
+		<p>{{bank.card_no}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Credit Limit</h5>
+		<p>{{bank.credit_limit}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Card Validity Date</h5>
+		<p>{{bank.validity_date}}</p>
+	</ion-item>
+	<!-- <ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Location of Statement</h5>
+		<ion-input type="text" value="" formControlName="company_name" name="company_name"></ion-input>
+	</ion-item> -->
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Web Login Id</h5>
+		<p>{{bank.login_id}}</p>
+	</ion-item>
+</ion-content>
+
+
+
+
+<ion-content padding *ngIf="bank_type==2">
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Bank Name</h5>
+		<p>{{bank.bank_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Branch Address</h5>
+		<p>{{bank.branch_address}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Deposit Holder's Name</h5>
+		<p>{{bank.holder_name}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Amount Invested</h5>
+		<p>{{bank.amount}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Fixed Deposit Number</h5>
+		<p>{{bank.fd_no}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Investment Date</h5>
+		<p>{{bank.invest_date}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Investment Duration</h5>
+		<p>{{bank.duration}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Rate of Interest</h5>
+		<p>{{bank.rate}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Maturity Date</h5>
+		<p>{{back.maturity_date}}</p>
+	</ion-item>
+	<ion-item>
+		<ion-icon name="document" item-start></ion-icon>
+		<h5>Maturity Amount</h5>
+		<p>{{bank.maturity_amount}}</p>
+	</ion-item>
+</ion-content>

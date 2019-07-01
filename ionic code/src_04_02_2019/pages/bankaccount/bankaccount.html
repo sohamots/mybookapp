@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Bank Account</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 *ngFor="let item of bank_accounts">
+				<ion-card (click)="gotoAddaccountsPage()" class="color-one">
+					<ion-card-content>
+						<h3>{{item.acc_type}} Account</h3>
+			    		<h2>{{item.bank_name}}</h2>
+			    		<p>Account No.: {{item.acc_no}}</p>
+			    		<p>IFSC Code: {{item.ifsc_code}}</p>
+			  		</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-fab bottom right (click)="gotoAddaccountsPage()">
+	    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>
